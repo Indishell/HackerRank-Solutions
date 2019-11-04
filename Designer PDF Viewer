@@ -1,0 +1,15 @@
+//https://www.hackerrank.com/challenges/designer-pdf-viewer
+
+
+int designerPdfViewer(vector<int> h, string word) {
+
+    int max = INT_MIN;
+    for(int i = ; i < word.size(); i++){
+    // Gettting the character who is having maximum value from the vector h .
+    //
+        if( max < h[word[i] - 'a'])
+            max =  h[word[i] - 'a'];
+    }
+    return word.size() * max;
+
+}
